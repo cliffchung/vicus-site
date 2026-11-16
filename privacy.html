@@ -12,9 +12,9 @@
 <header><img src="icon.png" alt=""><a href="./">Vicus</a></header>
 <main>
 <h1>Privacy policy</h1>
-<p class="lead">Last updated 13 November 2026. This policy covers the Vicus apps for iPhone and Apple Watch.</p>
+<p class="lead">Last updated 16 November 2026. This policy covers the Vicus apps for iPhone and Apple Watch.</p>
 
-<p class="note">The short version: there is no account, no advertising and no tracking, and we do not receive your data. Your workouts, routes, calendar and health data stay on your iPhone and Apple Watch and in Apple Health. To plan a route and show the weather, the app asks outside map and weather services about the area around your start; those requests carry that location and nothing that says who you are.</p>
+<p class="note">The short version: there is no account, no advertising and no tracking, and we do not receive your data unless you choose to share anonymous usage counts (off by default). Your workouts, routes, calendar and health data stay on your iPhone and Apple Watch and in Apple Health. To plan a route and show the weather, the app asks outside map and weather services about the area around your start; those requests carry that location and nothing that says who you are.</p>
 
 <h2>What stays on your devices</h2>
 <ul>
@@ -39,6 +39,26 @@
 <p>As with any internet request, these services see the IP address the request comes from. The requests do not include your name, an account, an advertising identifier or your health data. Each service handles what it receives under its own privacy policy.</p>
 <p>If you open a link to directions in another maps app, that app receives the places in the link.</p>
 
+<h2>Anonymous usage sharing (optional, off by default)</h2>
+<p>Settings has a switch, <strong>Share anonymous usage</strong>. It is off until you turn it on, and Vicus works the same either way. While it is off, nothing described in this section is made, stored or sent. When it is on, Vicus sends a few counts about how the app is used so we can see what helps and what does not. They go to <a href="https://telemetrydeck.com">TelemetryDeck</a> (TelemetryDeck GmbH), a privacy-focused analytics service that processes them on our behalf and may not use them for anything else.</p>
+<p><strong>What is sent.</strong> Only these seven events, with only these fields:</p>
+<div class="wide">
+<table>
+<tr><th>Event</th><th>When</th><th>Fields</th></tr>
+<tr><td>onboarding_finished</td><td>You finish setting up</td><td>How many setup steps you skipped</td></tr>
+<tr><td>session_started</td><td>You start a run or ride on the iPhone</td><td>Run or bike; whether it is your first session</td></tr>
+<tr><td>session_finished</td><td>A session on the iPhone ends</td><td>Run or bike; done or stopped early; length in a bucket (under 15, 15 to 30, 30 to 60, over 60 minutes)</td></tr>
+<tr><td>suggestion_resolved</td><td>You accept, edit or skip a suggested session</td><td>Accepted, edited or skipped; for an edit, whether you changed the day, time, length, sport or something else</td></tr>
+<tr><td>route_chosen</td><td>You choose a route</td><td>Whether it passed the safety check or is a caution route, or there was none; whether you changed it; whether it came with the app or was planned on your iPhone</td></tr>
+<tr><td>week_summary</td><td>Once a week, when you open the app</td><td>Last week's counts: sessions planned and done, suggestions shown, accepted, edited and skipped</td></tr>
+<tr><td>app_opened_week</td><td>Once a week, when you open the app</td><td>How many weeks since your first launch</td></tr>
+</table>
+</div>
+<p>Every event also carries the app build number, whether it came from the iPhone or the Apple Watch, and a random install id. The install id is made on your iPhone when you turn sharing on. It is not your Apple ID, your email or anything from Health, and it cannot be traced back to you. TelemetryDeck hashes it again before storing it. Like any internet request, the request reaches TelemetryDeck from your IP address; TelemetryDeck does not keep it.</p>
+<p><strong>What is never sent.</strong> Your location or any place, routes or their shape, heart rate or any other health data, calendar contents, anything you type, your name or email, an advertising identifier, or the contents of your workouts. The events above are the whole list; anything not on it is dropped on your iPhone before it is sent.</p>
+<p><strong>Turning it off.</strong> Switch off Share anonymous usage in Settings at any time. Vicus stops sending, throws away the install id and the weekly tally it kept on your iPhone, and a new random id is made if you turn it on again. Because the id is random and not linked to you, we cannot find or delete the events of one person; they are removed when they age out.</p>
+<p><strong>How long we keep it.</strong> Events are kept for 13 months and then deleted. That period is our own choice, not one TelemetryDeck sets. The counts are used only to improve Vicus, never for advertising or tracking.</p>
+
 <h2>Logs you choose to send</h2>
 <p>Settings has a <strong>Send logs</strong> button. It makes a file of what Vicus said and did in your recent workouts, including the coaching lines with the heart rates and paces spoken in them, and opens the share sheet. The file goes only where you send it. If you email it to us for help, we use it to look into your problem and for nothing else.</p>
 
@@ -46,8 +66,8 @@
 <ul>
 <li>No account, and no sign-in.</li>
 <li>No advertising, and no tracking across apps or websites.</li>
-<li>No analytics or advertising software from other companies in the app.</li>
-<li>We do not sell or share personal data, because we do not receive it.</li>
+<li>No advertising software from other companies in the app. The only analytics is the optional, off-by-default usage sharing above.</li>
+<li>We do not sell or share personal data, because we do not receive it. The anonymous counts you may choose to share are not linked to you and are used only to improve Vicus.</li>
 </ul>
 
 <h2>Keeping and deleting your data</h2>
